@@ -73,7 +73,7 @@
         </v-toolbar>
       </template>
       <template v-slot:item.action="{ item }">
-        <v-icon>mdi-delete</v-icon>
+        <v-icon @click="removeItem(item)">mdi-delete</v-icon>
       </template>
     </v-data-table>
     </v-card>
@@ -135,6 +135,14 @@ export default {
         .finally(() => {
           this.$data.loadingItems = false;
         });
+    },
+    deleteItem: function(item) {
+      if(item && item.id){
+      this.$data.loadingItems = true;
+      const DeleteItemURI = `http://127.0.0.1:5000/item/delete/${item.id}`;
+      //call out
+      this.getItems();
+      }
     },
     closeDialog: function() {
       this.$data.dialog = false;
