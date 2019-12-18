@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar app color="orange" dark>
+    <v-app-bar app color="primary" dark>
+      <v-spacer></v-spacer>
       <v-btn to="/login" text color="black">Login/Create Account</v-btn>
     </v-app-bar>
 

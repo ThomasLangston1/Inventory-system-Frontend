@@ -64,7 +64,7 @@ export default {
               if (response.data === "Validated") {
                 localStorage.setItem("userValidated", true);
                 //redirect to new inventory page
-                this.$router.push('inventory');
+                this.$router.push("inventory");
               } else {
                 localStorage.setItem("userValidated", false);
               }
