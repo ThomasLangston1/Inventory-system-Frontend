@@ -53,7 +53,7 @@ export default {
   methods: {
     verifyUser: function() {
       if (this.$data.username && this.$data.password) {
-        const verifyUserURI = "http://127.0.0.1:5000/user/verify";
+        const verifyUserURI = "https://tslinventorysystem.herokuapp.com//user/verify";
         this.$http
           .post(verifyUserURI, {
             username: this.$data.username,
