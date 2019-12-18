@@ -93,7 +93,7 @@ export default {
       dialog: false,
       headers: [
         { text: "Name", value: "name", sortable: true },
-        { text: "Weight", value: "weight", sortable: true },
+        { text: "Weight(lbs)", value: "weight", sortable: true },
         { text: "Location", value: "location", sortable: true },
         { text: "Actions", value: "action", sortable: false}
       ],
