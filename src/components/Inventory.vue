@@ -34,7 +34,7 @@
                   <v-row>
                     <v-col cols="12" sm="12" md="12">
                       <v-text-field
-                        label="Weight"
+                        label="Weight(lbs)"
                         name="weight"
                         prepend-icon="mdi-weight"
                         type="text"
@@ -93,7 +93,7 @@ export default {
       dialog: false,
       headers: [
         { text: "Name", value: "name", sortable: true },
-        { text: "Weight(lbs)", value: "weight", sortable: true },
+        { text: "Weight", value: "weight", sortable: true },
         { text: "Location", value: "location", sortable: true },
         { text: "Actions", value: "action", sortable: false}
       ],
