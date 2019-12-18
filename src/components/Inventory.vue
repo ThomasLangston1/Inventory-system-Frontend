@@ -105,7 +105,7 @@ export default {
   },
   methods: {
     createItem: function() {
-      const CreateItemURI = "https://tslinventorysystem.herokuapp.com//item/create";
+      const CreateItemURI = "https://tslinventorysystem.herokuapp.com/item/create";
       //create item
       this.$http
         .post(CreateItemURI, {
@@ -123,7 +123,7 @@ export default {
     },
     getItems: function() {
       this.$data.loadingItems = true;
-      const GetItemURI = "https://tslinventorysystem.herokuapp.com//item/get";
+      const GetItemURI = "https://tslinventorysystem.herokuapp.com/item/get";
       this.$http
         .get(GetItemURI)
         .then(response => {
@@ -141,7 +141,7 @@ export default {
     deleteItem: function(item) {
       if(item && item.id){
       this.$data.loadingItems = true;
-      const DeleteItemURI = `https://tslinventorysystem.herokuapp.com//item/delete/${item.id}`;
+      const DeleteItemURI = `https://tslinventorysystem.herokuapp.com/item/delete/${item.id}`;
       //call out
       this.$http
       .delete(DeleteItemURI,{

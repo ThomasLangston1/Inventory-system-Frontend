@@ -67,7 +67,7 @@ export default {
         this.$data.email &&
         this.$data.name
       ) {
-        const CreateUserURI = "https://tslinventorysystem.herokuapp.com//user/create";
+        const CreateUserURI = "https://tslinventorysystem.herokuapp.com/user/create";
         this.$http
           .post(CreateUserURI, {
             username: this.$data.username,
