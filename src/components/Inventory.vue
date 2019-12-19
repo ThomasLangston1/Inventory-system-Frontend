@@ -100,6 +100,11 @@ export default {
       inventoryItems: []
     };
   },
+  beforeMount() {
+    if(!this.$store.getters.loggedIn) {
+      this.$router.push('login');
+    }
+  },
   mounted() {
     this.getItems();
   },

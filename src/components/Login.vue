@@ -62,11 +62,11 @@ export default {
           .then(response => {
             if (response && response.data) {
               if (response.data === "Validated") {
-                localStorage.setItem("userValidated", true);
+                this.$store.commit('login');
                 //redirect to new inventory page
                 this.$router.push("inventory");
               } else {
-                localStorage.setItem("userValidated", false);
+                this.$store.commit('logout');
               }
             }
           })
